@@ -35,6 +35,5 @@ A window pops up. You have some keyboard controls.
 * `i` to add a point where the mouse is.
 * `d` to delete the point under the mouse.
 * Click and drag points to move them around.
-![spline in there](readme_images/spline_in_there.png)
 
 Then you press `spacebar` and the suddenly, `linebuilder.get_spline()` returns an anonymous function that is the blue spline you see above!
