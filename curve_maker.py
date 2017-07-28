@@ -126,24 +126,18 @@ class LineBuilder:
         self.update_points()
 
 
-# fig = plt.figure()
-# ax = fig.add_subplot(111)
+fig = plt.figure()
+ax = fig.add_subplot(111)
 
 # this is the place where you put some custom plotting routines
 
 
 
-f, [ax, ax_aux] = plt.subplots(2, sharex=True)
-ax.set_xlabel('1+z')
-ax.set_xlim(1,7)
-ax.set_ylim(1e-3,1)
-ax.set_xscale('log')
-ax.set_yscale('log')
 
-z = np.linspace(0,6,100)
-# ax.plot( z+1, sfr, label=r'SFR' )
-psi =  0.268 *(1. + 0.75*z)**6.81 * np.exp(-z**0.922 / 0.302) + 0.032
-ax.plot(z+1,psi, '--', label=r'Scaled Madau')
+x = np.linspace(-np.pi, np.pi)
+y = np.sin(x)
+
+plt.plot(x,y)
 
 
 ax.set_title('click to build a spline')
